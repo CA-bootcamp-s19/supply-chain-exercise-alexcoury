@@ -85,7 +85,7 @@ contract SupplyChain {
     _;
   }
   modifier shipped(uint sku) {
-    require(items[sku].state == State.Shipped, "Item has not been shipped");
+    require(items[sku].state == State.Shipped, "Item has not been shipped.");
     _;
   }
   modifier received(uint sku) {
